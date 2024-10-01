@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    background: radial-gradient(circle at center, #dfe6e9, #b2bec3, #636e72); 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 450px;
+    background: linear-gradient(135deg, #3f87a6, #ebf8e1); 
+    color: #333;
+    margin: 0 auto;
+    border-radius: 18px;
+    padding: 35px 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 1px solid #ccc;
+    outline: none;
+    background: #f9f9f9;
+    color: #333;
+    padding: 12px 20px;
+    height: 55px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 12px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #00aaff;
+}
+
+.search button {
+    border: none;
+    background: #00aaff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search button:hover {
+    background: #0088cc;
+}
+
+.search button img {
+    width: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 25px;
+}
+
+.weather h1 {
+    font-size: 56px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.weather h2 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #555;
+    margin-top: -8px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 45px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 24px;
+    color: #333;
+}
+
+.details p {
+    color: #000000a1;
+    margin: 5px 0 0;
+}
